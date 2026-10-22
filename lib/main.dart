@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 // POKÉDEX NOIR — Dark editorial redesign. Only dependency: http.
-const bg = Color(0xFF0B1020);
 const panel = Color(0xFF151D30);
 const panel2 = Color(0xFF1B263B);
 const white = Color(0xFFF7F9FF);
@@ -130,7 +129,7 @@ class _ExplorePageState extends State<ExplorePage> {
   String type = 'all';
   final types = const ['all', 'fire', 'water', 'grass', 'electric', 'psychic', 'dragon', 'ghost', 'fairy', 'dark', 'ice', 'fighting', 'normal', 'bug', 'poison', 'ground', 'rock', 'flying', 'steel'];
   @override
-  void initState() { super.initState(); all = api.list(); }
+  void initState() { super.initState(); all = api.list(); }q
   @override
   void dispose() { controller.dispose(); api.dispose(); super.dispose(); }
   void pickType(String selected) { setState(() { type = selected; all = selected == 'all' ? api.list() : api.byType(selected); }); }
