@@ -26,7 +26,6 @@ Color typeColor(String t) => <String, Color>{
   'rock': const Color(0xFFCFBB8B), 'bug': const Color(0xFFAFCD70),
   'ghost': const Color(0xFF9792E9), 'steel': const Color(0xFF9FBBCB),
   'ice': const Color(0xFF8CDDE2), 'dragon': const Color(0xFF8D8CF6),
-  'dark': const Color(0xFF8D93AB), 'fairy': const Color(0xFFFFB6DE),
 }[t] ?? accent;
 
 class Api {
